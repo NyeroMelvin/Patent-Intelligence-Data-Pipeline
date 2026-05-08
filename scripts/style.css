@@ -1,0 +1,595 @@
+/* =============================================
+   Patent Analytics Dashboard — style.css
+   Theme: Orange & Black on White
+   Version: 2.0 - Optimized for Plotly Charts
+   ============================================= */
+
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+   /* ─────────────────────────────────────────────────────────────────────────────
+      RESET & BASE STYLES
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   html, body, [class*="css"], .stApp, .main, .block-container {
+       background-color: #ffffff !important;
+       color: #000000 !important;
+       font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      MAIN CONTENT AREA
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .block-container {
+       padding: 2rem 2rem 2rem 2rem !important;
+       max-width: 1400px !important;
+       background-color: #ffffff !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      TYPOGRAPHY - HEADINGS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   h1 {
+       font-size: 2.2rem !important;
+       font-weight: 800 !important;
+       color: #000000 !important;
+       letter-spacing: -0.5px !important;
+       border-left: 6px solid #FF6B00 !important;
+       padding-left: 16px !important;
+       margin-bottom: 0.5rem !important;
+       margin-top: 0 !important;
+   }
+   
+   h2, h3, [data-testid="stSubheader"] {
+       font-size: 1.3rem !important;
+       font-weight: 700 !important;
+       color: #000000 !important;
+       border-bottom: 2px solid #FF6B00 !important;
+       padding-bottom: 6px !important;
+       margin-top: 1.5rem !important;
+       margin-bottom: 1rem !important;
+   }
+   
+   h4, h5, h6 {
+       font-weight: 600 !important;
+       color: #000000 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      TEXT & PARAGRAPHS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   p, span, label, div, li, td, th {
+       color: #000000 !important;
+       font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+   }
+   
+   .stMarkdown p {
+       font-size: 0.95rem !important;
+       color: #333333 !important;
+       line-height: 1.5 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      SIDEBAR - Dark theme with orange accent
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   section[data-testid="stSidebar"] {
+       background-color: #111111 !important;
+       border-right: 3px solid #FF6B00 !important;
+   }
+   
+   section[data-testid="stSidebar"] .css-1d391kg, 
+   section[data-testid="stSidebar"] .st-emotion-cache-1d391kg {
+       background-color: #111111 !important;
+   }
+   
+   section[data-testid="stSidebar"] * {
+       color: #ffffff !important;
+       font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+   }
+   
+   section[data-testid="stSidebar"] .stRadio label,
+   section[data-testid="stSidebar"] .stSelectbox label,
+   section[data-testid="stSidebar"] .stMultiSelect label,
+   section[data-testid="stSidebar"] .stSlider label {
+       color: #ffffff !important;
+       font-size: 13px !important;
+       font-weight: 500 !important;
+   }
+   
+   section[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"] {
+       background-color: #222222 !important;
+       border-color: #FF6B00 !important;
+   }
+   
+   section[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"] div {
+       color: #ffffff !important;
+   }
+   
+   section[data-testid="stSidebar"] hr {
+       border-top-color: #333333 !important;
+   }
+   
+   /* Sidebar headers */
+   section[data-testid="stSidebar"] h1,
+   section[data-testid="stSidebar"] h2,
+   section[data-testid="stSidebar"] h3 {
+       color: #FF6B00 !important;
+       border-bottom-color: #FF6B00 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      METRIC CARDS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   div[data-testid="metric-container"] {
+       background-color: #ffffff !important;
+       border: 2px solid #FF6B00 !important;
+       border-radius: 12px !important;
+       padding: 16px 20px !important;
+       box-shadow: 0 2px 8px rgba(255, 107, 0, 0.1) !important;
+       transition: all 0.2s ease !important;
+   }
+   
+   div[data-testid="metric-container"]:hover {
+       box-shadow: 0 4px 16px rgba(255, 107, 0, 0.2) !important;
+       transform: translateY(-2px) !important;
+   }
+   
+   div[data-testid="metric-container"] [data-testid="stMetricValue"] {
+       font-size: 1.8rem !important;
+       font-weight: 800 !important;
+       color: #FF6B00 !important;
+   }
+   
+   div[data-testid="metric-container"] [data-testid="stMetricLabel"] {
+       font-size: 0.8rem !important;
+       font-weight: 600 !important;
+       color: #000000 !important;
+       text-transform: uppercase !important;
+       letter-spacing: 0.5px !important;
+   }
+   
+   div[data-testid="metric-container"] [data-testid="stMetricDelta"] {
+       font-size: 0.75rem !important;
+       color: #666666 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      DATA FRAMES / TABLES
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stDataFrame {
+       border: 1px solid #e0e0e0 !important;
+       border-radius: 8px !important;
+       overflow: auto !important;
+   }
+   
+   .stDataFrame table {
+       font-size: 13px !important;
+       font-family: 'Inter', monospace !important;
+   }
+   
+   .stDataFrame thead tr th {
+       background-color: #f5f5f5 !important;
+       color: #FF6B00 !important;
+       font-weight: 700 !important;
+       padding: 10px 8px !important;
+   }
+   
+   .stDataFrame tbody tr:hover {
+       background-color: #fff4ec !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      SLIDERS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stSlider label {
+       color: #000000 !important;
+       font-size: 13px !important;
+       font-weight: 600 !important;
+   }
+   
+   .stSlider [data-baseweb="slider"] [role="slider"] {
+       background-color: #FF6B00 !important;
+       border-color: #FF6B00 !important;
+   }
+   
+   .stSlider [data-baseweb="slider"] div[role="slider"]:focus {
+       outline: none !important;
+       box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.3) !important;
+   }
+   
+   .stSlider [data-baseweb="slider"] div[data-testid="stThumbValue"] {
+       color: #000000 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      BUTTONS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stButton > button {
+       background-color: #FF6B00 !important;
+       color: #ffffff !important;
+       border: none !important;
+       border-radius: 8px !important;
+       font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+       font-size: 14px !important;
+       font-weight: 700 !important;
+       padding: 0.5rem 1.2rem !important;
+       transition: all 0.2s ease !important;
+       cursor: pointer !important;
+   }
+   
+   .stButton > button:hover {
+       background-color: #e05e00 !important;
+       transform: translateY(-1px) !important;
+       box-shadow: 0 2px 8px rgba(255, 107, 0, 0.3) !important;
+   }
+   
+   .stButton > button:active {
+       transform: translateY(0px) !important;
+   }
+   
+   /* Secondary button style */
+   .stButton > button[kind="secondary"] {
+       background-color: transparent !important;
+       border: 2px solid #FF6B00 !important;
+       color: #FF6B00 !important;
+   }
+   
+   .stButton > button[kind="secondary"]:hover {
+       background-color: #FFF4EC !important;
+       transform: translateY(-1px) !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      INFO / WARNING / SUCCESS / ERROR BOXES
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stInfo, [data-testid="stInfo"] {
+       background-color: #fff4ec !important;
+       border-left: 4px solid #FF6B00 !important;
+       border-radius: 6px !important;
+       padding: 1rem !important;
+   }
+   
+   .stWarning, [data-testid="stWarning"] {
+       background-color: #fff3e0 !important;
+       border-left: 4px solid #f5a623 !important;
+   }
+   
+   .stError, [data-testid="stError"] {
+       background-color: #fee !important;
+       border-left: 4px solid #e74c3c !important;
+   }
+   
+   .stSuccess, [data-testid="stSuccess"] {
+       background-color: #e8f5e9 !important;
+       border-left: 4px solid #4caf50 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      EXPANDERS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .streamlit-expanderHeader {
+       font-weight: 600 !important;
+       color: #FF6B00 !important;
+       background-color: #fafafa !important;
+       border-radius: 8px !important;
+       border: 1px solid #eeeeee !important;
+   }
+   
+   .streamlit-expanderHeader:hover {
+       background-color: #fff4ec !important;
+       border-color: #FF6B00 !important;
+   }
+   
+   .streamlit-expanderContent {
+       background-color: #ffffff !important;
+       border-radius: 0 0 8px 8px !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      TABS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stTabs [data-baseweb="tab-list"] {
+       gap: 4px !important;
+       border-bottom: 2px solid #eeeeee !important;
+   }
+   
+   .stTabs [data-baseweb="tab"] {
+       background-color: #fafafa !important;
+       color: #000000 !important;
+       font-weight: 600 !important;
+       border-radius: 8px 8px 0 0 !important;
+       padding: 8px 16px !important;
+   }
+   
+   .stTabs [data-baseweb="tab"]:hover {
+       background-color: #fff4ec !important;
+   }
+   
+   .stTabs [data-baseweb="tab"][aria-selected="true"] {
+       background-color: #FF6B00 !important;
+       color: #ffffff !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      PLOTLY / CHART CONTAINERS - CRITICAL FOR CLEAR GRAPHS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stPlotlyChart {
+       border-radius: 12px !important;
+       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05) !important;
+       border: 1px solid #f0f0f0 !important;
+       background-color: #ffffff !important;
+       overflow: visible !important;
+       padding: 0 !important;
+   }
+   
+   /* Ensure plot tooltips appear above everything */
+   .js-plotly-plot .plotly .hoverlayer {
+       z-index: 9999 !important;
+   }
+   
+   /* Force Plotly to use crisp, readable fonts */
+   .js-plotly-plot .plotly .main-svg {
+       font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+   }
+   
+   /* Axis labels - make them clear and readable */
+   .js-plotly-plot .plotly .xtick text,
+   .js-plotly-plot .plotly .ytick text {
+       font-size: 12px !important;
+       font-weight: 500 !important;
+       fill: #000000 !important;
+   }
+   
+   /* Axis titles - bold and prominent */
+   .js-plotly-plot .plotly .g-xtitle text,
+   .js-plotly-plot .plotly .g-ytitle text {
+       font-weight: 700 !important;
+       font-size: 13px !important;
+       fill: #000000 !important;
+   }
+   
+   /* Chart titles */
+   .js-plotly-plot .plotly .gtitle text {
+       font-weight: 800 !important;
+       font-size: 16px !important;
+       fill: #000000 !important;
+   }
+   
+   /* Legend text */
+   .js-plotly-plot .plotly .legend text {
+       font-size: 11px !important;
+       font-weight: 500 !important;
+       fill: #333333 !important;
+   }
+   
+   /* Bar text labels */
+   .plotly .bartext text {
+       font-size: 11px !important;
+       font-weight: 600 !important;
+       fill: #000000 !important;
+   }
+   
+   /* Hover tooltips - crisp and readable */
+   .hoverlayer text,
+   .plotly .hovertext text {
+       font-size: 12px !important;
+       font-weight: 500 !important;
+       font-family: 'Inter', monospace !important;
+   }
+   
+   /* Improve grid line visibility */
+   .js-plotly-plot .plotly .gridlayer path {
+       stroke: #e8e8e8 !important;
+       stroke-width: 1px !important;
+   }
+   
+   /* Make axis lines sharp */
+   .js-plotly-plot .plotly .xaxislayer-above path,
+   .js-plotly-plot .plotly .yaxislayer-above path {
+       stroke: #cccccc !important;
+       stroke-width: 1.5px !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      FORM ELEMENTS - SELECT BOXES, INPUTS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   div[data-baseweb="select"] {
+       border-color: #cccccc !important;
+       border-radius: 6px !important;
+   }
+   
+   div[data-baseweb="select"]:focus-within {
+       border-color: #FF6B00 !important;
+       box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.1) !important;
+   }
+   
+   .stTextInput > div > div > input {
+       border-color: #cccccc !important;
+       border-radius: 6px !important;
+   }
+   
+   .stTextInput > div > div > input:focus {
+       border-color: #FF6B00 !important;
+       box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.1) !important;
+   }
+   
+   .stNumberInput input {
+       border-color: #cccccc !important;
+       border-radius: 6px !important;
+   }
+   
+   .stNumberInput input:focus {
+       border-color: #FF6B00 !important;
+   }
+   
+   .stDateInput input {
+       border-color: #cccccc !important;
+       border-radius: 6px !important;
+   }
+   
+   .stDateInput input:focus {
+       border-color: #FF6B00 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      FILE UPLOADER
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stFileUploader {
+       border: 2px dashed #cccccc !important;
+       border-radius: 12px !important;
+       padding: 1rem !important;
+       background-color: #fafafa !important;
+   }
+   
+   .stFileUploader:hover {
+       border-color: #FF6B00 !important;
+       background-color: #fff4ec !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      PROGRESS BARS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stProgress > div > div {
+       background-color: #FF6B00 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      CHECKBOXES & RADIO BUTTONS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stCheckbox label span {
+       color: #000000 !important;
+   }
+   
+   .stCheckbox input:checked + div {
+       background-color: #FF6B00 !important;
+       border-color: #FF6B00 !important;
+   }
+   
+   .stRadio label span {
+       color: #000000 !important;
+   }
+   
+   .stRadio input:checked + div {
+       border-color: #FF6B00 !important;
+   }
+   
+   .stRadio input:checked + div div {
+       background-color: #FF6B00 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      MULTISELECT TAGS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stMultiSelect [data-baseweb="tag"] {
+       background-color: #FF6B00 !important;
+       color: #ffffff !important;
+   }
+   
+   .stMultiSelect [data-baseweb="tag"] span {
+       color: #ffffff !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      SPINNER / LOADING
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stSpinner > div {
+       border-top-color: #FF6B00 !important;
+   }
+   
+   .stSpinner p {
+       color: #000000 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      FORM CONTAINERS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stForm {
+       border: 1px solid #e0e0e0 !important;
+       border-radius: 12px !important;
+       padding: 1.5rem !important;
+       background-color: #fafafa !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      DIVIDERS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   hr {
+       border: none !important;
+       border-top: 2px solid #eeeeee !important;
+       margin: 1.5rem 0 !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      CAPTIONS / SMALL TEXT / FOOTERS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stCaption, .stCaption * {
+       color: #888888 !important;
+       font-size: 11px !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      CODE BLOCKS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   .stCodeBlock {
+       background-color: #f5f5f5 !important;
+       border-left: 3px solid #FF6B00 !important;
+       border-radius: 6px !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      TOOLTIPS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   [data-testid="stTooltip"] {
+       background-color: #000000 !important;
+       color: #ffffff !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────────────────────────
+      RESPONSIVE ADJUSTMENTS
+      ────────────────────────────────────────────────────────────────────────── */
+   
+   @media (max-width: 768px) {
+       .block-container {
+           padding: 1rem !important;
+       }
+       
+       h1 {
+           font-size: 1.8rem !important;
+       }
+       
+       h2, h3 {
+           font-size: 1.1rem !important;
+       }
+       
+       div[data-testid="metric-container"] {
+           padding: 12px 16px !important;
+       }
+       
+       div[data-testid="metric-container"] [data-testid="stMetricValue"] {
+           font-size: 1.5rem !important;
+       }
+   }

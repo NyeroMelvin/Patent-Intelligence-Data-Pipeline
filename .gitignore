@@ -1,0 +1,56 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+venv/
+.env
+
+# Streamlit
+.streamlit/
+
+# OS files
+.DS_Store
+
+ data/patents.
+ 
+ comapnies.csv
+ inventors.csv
+ patent_assignee.csv
+ patent_inventor.csv
+ patents.csv
+
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.pdf
+*.mp4
+*.avi
+*.mov
+
+# Logs
+*.log
+logs/
+" > .gitignore
